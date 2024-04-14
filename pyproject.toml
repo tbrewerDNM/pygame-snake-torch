@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "pytorch-snake"
+version = "0.1.0"
+description = ""
+authors = ["Terence Brewer <terencedbrewer@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+torch = {version = "^2.2.2+cpu", source = "torchurl"}
+torchvision = {version = "^0.17.2+cpu", source = "torchurl"}
+torchaudio = {version = "^2.2.2+cpu", source = "torchurl"}
+pygame = "^2.5.2"
+
+
+[[tool.poetry.source]]
+name = "torchurl"
+url = "https://download.pytorch.org/whl/cpu"
+priority = "supplemental"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
